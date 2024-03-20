@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -34,11 +35,34 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				decimal CurrInt;
+				CurrInt = GetValue();
+				decimal count = 0;
+				decimal sum = 0;
+				decimal mean = 0;
+					
+				while (CurrInt != -1)
+				{
+					count++;
+					sum = CurrInt + sum;
+					CurrInt = GetValue();
+
+                }
+                Console.Write(count);
+                Console.Write("  ");
+                Console.Write(sum / count);
+                Console.WriteLine("  ");
+
+			
 
 
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+
+
+
+
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
